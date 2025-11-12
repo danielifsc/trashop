@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trashop</title>
   <link rel="stylesheet" href="./src/css/style.css" />
-  <link href="/src/assets/css/bootstrap.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="src/assets/css/bootstrap.css" rel="stylesheet"/>
   <link rel="shortcut icon" href="./src/imagens/icons/reciclagemIcon.ico" type="image/x-icon" />
 </head>
 
