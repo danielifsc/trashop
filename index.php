@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trashop</title>
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="shortcut icon" href="./src/imagens/icons/reciclagemIcon.ico" type="image/x-icon" />
-</head>
-
-<body class="container background-color-black">
-  <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top mb-5">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./src/imagens/icons/reciclagemImg.png" alt="Logo" width="30" height="30"
-          class="d-inline-block align-text-top" />
-        Trashop
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#products">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#trashcoin">Carteira(trashcoin)</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-us">Sobre nós</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
-
-  </nav>
+<?php require_once './src/includes/cabecalho.php' ?>
 
   <section id="rells" class="mt-5">
 
@@ -230,32 +185,5 @@
       </p>
     </div>
   </section>
-  <!--Rodapé-->
-  <section>
-    <footer class="bg-light text-center text-lg-start mt-5">
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p class="lead"><b>Conheça nossas redes!</b></p>
-        <a class="px-2" href="https://www.instagram.com/"><img src="./src/imagens/icons/instagram.svg" alt=""
-            style="height: 30px;"></a>
-        <a class="px-2" href="https://api.whatsapp.com/resolve/?deeplink=%2F%5Bwhatsapp%5D&not_found=1"><img
-            src="./src/imagens/icons/whatsapp.svg" alt="" style="height: 30px;"></a>
-        <a class="px-2" href="https://x.com/"><img src="./src/imagens/icons/twitter-x.svg" alt=""
-            style="height: 30px;"></a>
-        <a class="px-2" href="https://www.youtube.com/"><img src="./src/imagens/icons/youtube.svg" alt=""
-            style="height: 30px;"></a>
-        <a class="px-2" href="https://www.facebook.com/?locale=pt_BR" style="height: 30px;"><img
-            src="./src/imagens/icons/facebook.svg" alt="" style="height: 30px;"></a>
-      </div>
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2025 Trashop. Todos os direitos reservados.
-      </div>
-
-    </footer>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+  
+  <?php require_once './src/includes/rodape.php' ?>
