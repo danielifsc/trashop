@@ -3,12 +3,16 @@ CREATE DATABASE `db_trashop`;
 USE `db_trashop`;
 
 -- Tabela de Usuários
-CREATE TABLE `usuarios` (
-  `id` INT AUTO_INCREMENT PRIMARY KEY,
-  `nome_usuario` VARCHAR(50) NOT NULL UNIQUE,
+CREATE TABLE IF NOT EXISTS `syscash`.`usuario` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `login` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(255) NOT NULL,
-  `data_criacao` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci ;
 
 -- Tabela de Atividades
 -- CREATE TABLE `atividades` (

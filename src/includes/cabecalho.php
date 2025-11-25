@@ -5,16 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trashop</title>
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <link href="src/assets/css/bootstrap.css" rel="stylesheet"/>
-  <link rel="shortcut icon" href="./src/imagens/icons/reciclagemIcon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="./assets/css/bootstrap.css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="./imagens/icons/reciclagemIcon.ico" type="image/x-icon" />
 </head>
 
 <body class="container background-color-black">
   <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top mb-5">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./src/imagens/icons/reciclagemImg.png" alt="Logo" width="30" height="30"
+      <a class="navbar-brand" href="./index.php#">
+        <img src="./imagens/icons/reciclagemImg.png" alt="Logo" width="30" height="30"
           class="d-inline-block align-text-top" />
         Trashop
       </a>
@@ -25,16 +25,16 @@
       <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
+            <a class="nav-link active" aria-current="page" href="./index.php#">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#products">Produtos</a>
+            <a class="nav-link" href="./index.php#products">Produtos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#trashcoin">Carteira(trashcoin)</a>
+            <a class="nav-link" href="./index.php#trashcoin">Carteira(trashcoin)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-us">Sobre nós</a>
+            <a class="nav-link" href="./index.php#about-us">Sobre nós</a>
           </li>
         </ul>
       </div>
