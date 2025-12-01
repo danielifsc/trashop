@@ -1,5 +1,6 @@
 <?php require_once 'includes/cabecalho.php' ?>
 
+  <main>
   <section id="rells" class="mt-5">
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
@@ -188,5 +189,6 @@
       </p>
     </div>
   </section>
+  </main>
   
-  <?php require_once '/includes/rodape.php' ?>
+  <?php require_once 'includes/rodape.php' ?>

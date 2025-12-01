@@ -1,5 +1,5 @@
-<?php 
-require_once 'includes/cabecalho.php' ;
+<?php
+require_once 'includes/cabecalho.php';
 ?>
 
 <?php
@@ -12,8 +12,8 @@ require_once("includes/db.php");
 if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
     try {
         $erros = [];
-        $login = filter_input(INPUT_POST, "login", FILTER_SANITIZE_STRING);
-        $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
+        $login = filter_input(INPUT_POST, "login", FILTER_SANITIZE_SPECIAL_CHARS);
+        $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_SPECIAL_CHARS);
 
         $sql = "select * from usuario where login = ?";
 
@@ -38,7 +38,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         }
 
         header("HTTP 1/1 302 Redirect");
-       
+        header("location: index.php");
     } catch (Exception $e) {
         $erros[] = $e->getMessage();
         $_SESSION["erros"] = $erros;
@@ -56,6 +56,12 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/fontawesome/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/brands.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/solid.min.css" rel="stylesheet">
+    <link href="assets/css/sistema/landpage.css" rel="stylesheet">
+    <link href="assets/css/sistema/login.css" rel="stylesheet">
 
 </head>
 
@@ -90,19 +96,9 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         </form>
         <p class="text-center"><a href="cadastro.php">Cadastrar-se!</a></p>
     </main>
-    <footer class="container">
-        <hr class="featurette-divider">
-        <p>
-            &copy; 2021–<script>
-                document.write(new Date().getFullYear())
-            </script>
-            | Syscash - O Seu Sistema de Finanças | Alexandre -
-            <a href="https://www.youtube.com/channel/UCUeidwLoy7YK4kEeuq2sPgw" target="_blank">Peregrino de TI</a>
-        </p>
-    </footer>
 
-    <script src="assets/bootstrap/bootstrap.bundle.js"></script>
-   
+    <script src="assets/js/jquery/jquery.min.js"></script>
+    <script src="assets/js/fontawesome/fontawesome.min.js"></script>
     <script src="assets/js/login.js"></script>
 </body>
 

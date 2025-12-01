@@ -14,7 +14,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         $erros = [];
         $dados = [];
 
-        $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_STRING);
+        $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
         if (!$nome) {
             $erros["nome"] =  "Nome: Campo vazio e ou informação inválida!";
         }
@@ -26,13 +26,13 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         }
         $dados["email"] = $email;
 
-        $login = filter_input(INPUT_POST, "login", FILTER_SANITIZE_STRING);
+        $login = filter_input(INPUT_POST, "login", FILTER_SANITIZE_SPECIAL_CHARS);
         if (!$login) {
             $erros["login"] =  "Login: Campo vazio e ou informação inválida!";
         }
         $dados["login"] = $login;
 
-        $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING);
+        $senha = filter_input(INPUT_POST, "senha", FILTER_SANITIZE_SPECIAL_CHARS);
         if (!$senha) {
             $erros["senha"] =  "Senha: Campo vazio e ou informação inválida!";
         }
@@ -87,12 +87,12 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/fontawesome/fontawesome.min.css" rel="stylesheet">
-    <link href="./css/fontawesome/brands.min.css" rel="stylesheet">
-    <link href="./css/fontawesome/solid.min.css" rel="stylesheet">
-    <link href="./css/sistema/landpage.css" rel="stylesheet">
-    <link href="./css/sistema/cadastro.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/brands.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/solid.min.css" rel="stylesheet">
+    <link href="assets/css/sistema/landpage.css" rel="stylesheet">
+    <link href="assets/css/sistema/cadastro.css" rel="stylesheet">
 </head>
 
 <body>
@@ -148,10 +148,9 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
     </main>
 
 
-    <script src="./js/jquery/jquery.min.js"></script>
-    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./js/fontawesome/fontawesome.min.js"></script>
-    <script src="./js/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery/jquery.min.js"></script>
+    <script src="assets/js/fontawesome/fontawesome.min.js"></script>
+    <script src="assets/js/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="assets/js/cadastro.js"></script>
 </body>
 
