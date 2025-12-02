@@ -28,7 +28,7 @@ COLLATE = utf8_general_ci ;
 CREATE TABLE IF NOT EXISTS `db_trashop`.`carteira` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `trashcoin` INT NOT NULL,
-  `id_usuario` INT NOT NULL,
+  `usuario_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_carteira_usuario` (`usuario_id` ASC),
   CONSTRAINT `fk_carteira_usuario`
