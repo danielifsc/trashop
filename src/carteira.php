@@ -8,7 +8,7 @@ require_once 'includes/db.php'
 <?php
 $usuario_id = isset($_SESSION["usuario_id"]) ? $_SESSION["usuario_id"] : 0;
 
-$sql = "SELECT trashcoin FROM carteira WHERE usuario_id = :id ORDER BY id ASC LIMIT 1";;
+$sql = "SELECT carteira FROM usuario WHERE id = :id";
 $conexao = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
 try {
     // 1. Prepara a consulta
@@ -24,8 +24,7 @@ try {
 
     // 4. Extrai o valor da coluna "trashcoin". 
     // Se não houver resultado, define como 0.
-    $trashcoin = $dados_carteira ? (int) $dados_carteira["trashcoin"] : 0;
-
+    $trashcoin = $dados_carteira ? (int) $dados_carteira["carteira"] : 0;
 } catch (PDOException $e) {
     // Trata erro de conexão ou query
     error_log("Erro no banco de dados: " . $e->getMessage());
@@ -35,26 +34,38 @@ try {
 }
 ?>
 
-?>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<section>
+<main>
 
-    <div class="card">
-        <div class="card-header">
-            Carteira de Trashcoins
+    <link href="assets/css/fontawesome/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/brands.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome/solid.min.css" rel="stylesheet">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <section>
+        <h1 class="text-center"> Carteira de Trashcoins</h1>
+        <br>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Carteira de Trashcoins
+            </div>
+            <div class="card-body">
+                <h4 class="card-title"><?php echo $trashcoin ?> <img src="imagens/icons/moedaVerde.png" alt="" style="height: 30px;"></h4>
+                <p class="card-text">Acesse a rede coletora mais próxima, doe sua roupa/material não usado e recebe trashcois, após isso acesse nossa página de produtos e compre produtos recicláveis</p>
+                <a id="addCoins" href="#addcoin" class="btn btn-primary">Adquirir Trashcoins</a>
+            </div>
         </div>
-        <div class="card-body">
-            <h4 class="card-title"><?php echo $trashcoin ?></h4>
-            <p class="card-text">Acesse a rede coletora mais próxima, doe sua roupa/material não usado e recebe trashcois, após isso acesse nossa página de produtos e compre produtos recicláveis</p>
-            <a href="#addcoin" class="btn btn-primary">Adquirir Trashcoins</a>
-        </div>
-    </div>
 
-</section>
+    </section>
+</main>
+
+
+<!--<script src="assets/js/jquery/jquery.min.js"></script>-->
+<script src="assets/js/carteira.js"></script>
+<script src="assets/js/fontawesome/fontawesome.min.js"></script>
 
 <?php
 require_once 'includes/rodape.php';
