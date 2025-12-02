@@ -8,7 +8,7 @@ require_once 'includes/db.php'
 <?php
 $usuario_id = isset($_SESSION["usuario_id"]) ? $_SESSION["usuario_id"] : 0;
 
-$sql = "SELECT carteira FROM usuario ORDER BY id ASC LIMIT 1";
+$sql = "SELECT carteira FROM usuario ORDER BY id";
 $conexao = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
 try {
     // 1. Prepara a consulta
