@@ -38,7 +38,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
         }
 
         header("HTTP 1/1 302 Redirect");
-        header("location: index.php");
+        header("location: index-log.php");
     } catch (Exception $e) {
         $erros[] = $e->getMessage();
         $_SESSION["erros"] = $erros;
