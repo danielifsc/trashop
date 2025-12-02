@@ -24,7 +24,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Feita com algodão 100% reciclado, design moderno e sustentável.</p>
                         <p class="card-text"><strong>T$ 30,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                            Ver detalhes
+                            Comprar
                         </button>
 
                     </div>
@@ -58,7 +58,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Sacola durável e estilosa, perfeita para suas compras do dia a dia.</p>
                         <p class="card-text"><strong>T$ 15,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ require_once 'includes/cabecalho-log.php';
                         </p>
                         <p class="card-text"><strong>T$ 35,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -122,7 +122,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Feita com algodão 100% reciclado, design moderno e sustentável.</p>
                         <p class="card-text"><strong>T$ 30,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                            Ver detalhes
+                            Comprar
                         </button>
 
                     </div>
@@ -156,7 +156,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Sacola durável e estilosa, perfeita para suas compras do dia a dia.</p>
                         <p class="card-text"><strong>T$ 15,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -189,7 +189,7 @@ require_once 'includes/cabecalho-log.php';
                         </p>
                         <p class="card-text"><strong>T$ 35,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -220,7 +220,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Feita com algodão 100% reciclado, design moderno e sustentável.</p>
                         <p class="card-text"><strong>T$ 30,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                            Ver detalhes
+                            Comprar
                         </button>
 
                     </div>
@@ -254,7 +254,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Sacola durável e estilosa, perfeita para suas compras do dia a dia.</p>
                         <p class="card-text"><strong>T$ 15,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -287,7 +287,7 @@ require_once 'includes/cabecalho-log.php';
                         </p>
                         <p class="card-text"><strong>T$ 35,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -318,7 +318,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Feita com algodão 100% reciclado, design moderno e sustentável.</p>
                         <p class="card-text"><strong>T$ 30,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                            Ver detalhes
+                            Comprar
                         </button>
 
                     </div>
@@ -352,7 +352,7 @@ require_once 'includes/cabecalho-log.php';
                         <p class="card-text">Sacola durável e estilosa, perfeita para suas compras do dia a dia.</p>
                         <p class="card-text"><strong>T$ 15,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>
@@ -385,7 +385,7 @@ require_once 'includes/cabecalho-log.php';
                         </p>
                         <p class="card-text"><strong>T$ 35,90</strong></p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-                            Ver detalhes
+                            Comprar
                         </button>
                     </div>
                 </div>

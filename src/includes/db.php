@@ -2,7 +2,7 @@
 // Configurações do Banco de Dados
 define("DB_SERVER", "localhost");
 define("DB_USERNAME", "root"); // Seu usuário do MySQL
-define("DB_PASSWORD", "teste");     // Sua senha do MySQL
+define("DB_PASSWORD", "");     // Sua senha do MySQL
 define("DB_NAME", "db_trashop");
 
 // Tenta conectar ao banco de dados MySQL
