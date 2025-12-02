@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS `db_trashop`.`usuario` (
   `email` VARCHAR(45) NOT NULL,
   `login` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(255) NOT NULL,
+  `carteira` INT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
@@ -25,16 +26,5 @@ COLLATE = utf8_general_ci ;
 -- ) ENGINE=InnoDB DEFAULT
 
 -- Tabela de carteira
-CREATE TABLE IF NOT EXISTS `db_trashop`.`carteira` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `trashcoin` INT NOT NULL,
-  `id_usuario` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_carteira_usuario` (`usuario_id` ASC),
-  CONSTRAINT `fk_carteira_usuario`
-    FOREIGN KEY (`usuario_id`)
-    REFERENCES `db_trashop`.`usuario` (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8
-COLLATE = utf8_general_ci ;
+
 
