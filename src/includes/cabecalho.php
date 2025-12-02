@@ -26,8 +26,8 @@
   </style>
 </head>
 
-<body class="container background-color-black">
-  <div class="wrapper">
+<body class=" background-color-black">
+  <div class="wrapper container" >
     <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top mb-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.php#">
@@ -45,7 +45,7 @@
               <a class="nav-link active" aria-current="page" href="./index.php#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.php#products">Produtos</a>
+              <a class="nav-link" href="./index.php#produtos">Produtos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./index.php#trashcoin">Carteira(trashcoin)</a>
@@ -62,7 +62,4 @@
           </ul>
         </div>
       </div>
-
-
-
     </nav>

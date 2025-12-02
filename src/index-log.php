@@ -1,6 +1,7 @@
 <?php require_once 'includes/cabecalho-log.php' ?>
 
   <main>
+    <div class="my-5"></div>
   <section id="rells" class="mt-5">
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
@@ -189,6 +190,7 @@
       </p>
     </div>
   </section>
+
   </main>
   
   <?php require_once 'includes/rodape.php' ?>

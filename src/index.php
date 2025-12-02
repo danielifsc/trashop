@@ -2,7 +2,6 @@
 
   <main>
   <section id="rells" class="mt-5">
-
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-inner" >
         <div class="carousel-item active">
@@ -144,6 +143,11 @@
         </div>
       </div>
   </section>
+
+  <div class="text-center">
+    <a href="cadastro.php"><button class="btn btn-outline-primary">Veja todos os Produtos!</button></a>
+  </div>
+
   <section id="trashcoin">
     <div class="container my-5">
       <h2 class="text-center mb-4">Como Funciona a Trashcoin?</h2>
@@ -189,6 +193,7 @@
       </p>
     </div>
   </section>
+
   </main>
   
   <?php require_once 'includes/rodape.php' ?>
