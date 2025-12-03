@@ -30,8 +30,8 @@ require_once("valida_acesso.php");
   </style>
 </head>
 
-<body class="container background-color-black">
-  <div class="wrapper">
+<body class="background-color-black">
+  <div class="wrapper container">
     <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top mb-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.php#">

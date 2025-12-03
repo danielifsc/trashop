@@ -144,6 +144,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <section id="trashcoin">
     <div class="container my-5">
@@ -173,10 +174,9 @@
             <img style="height: 80px;" src="imagens/icons/ticket-detailed.svg" alt="">
             <p class="h5">Gaste em produtos recicláveis dentro da loja</p>
           </div>
-        </div>
-
-        
+        </div> 
       </div>
+    </div>
   </section>
   <section id="about-us">
     <div class="container my-5">

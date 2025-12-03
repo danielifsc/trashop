@@ -40,7 +40,7 @@
     </div>
   </section>
 
-  <section id="products" class="container my-5">
+  <section id="produtos" class="container my-5">
     <h2 class="text-center mb-4">Nossos Produtos</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <!-- Card de exemplo para Roupas -->
