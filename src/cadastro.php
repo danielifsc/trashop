@@ -142,6 +142,7 @@ if (filter_input(INPUT_SERVER, "REQUEST_METHOD") === "POST") {
             <button type="submit" class="btn btn-primary" id="botao_cadastrar">Cadastrar</button>
             <button type="reset" class="btn btn-secondary" id="botao_limpar">Limpar</button>
         </form>
+        <p class="text-center mt-5">Já possui cadastro? Faça seu <a href="login.php">Login!</a></p>
         <?php
         unset($_SESSION["dados"]);
         ?>

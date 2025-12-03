@@ -175,9 +175,7 @@
           </div>
         </div>
 
-        <div>
-          <a href="cadastro.php"><button class="btn btn-outline-success">acesse sua carteira de Trashcoin!</button></a>
-        </div>
+        
       </div>
   </section>
   <section id="about-us">
